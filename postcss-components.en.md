@@ -269,9 +269,11 @@ h2 {
 }
 </style>
 
-## Analog WhatsUp
-
 ## All machines must suffer
+
+## Deverse and solve TODO
+
+## Analog WhatsApp
 
 ## Modern Computer
 
@@ -289,7 +291,7 @@ module.***exports*** = React.createClass({
 
 ## Design Styleguides
 
-## And then Global CSS :(
+## And then Global CSS **:-(**
 
 ```css
 * {
@@ -302,40 +304,34 @@ module.***exports*** = React.createClass({
 
 ## Problems
 
-1. Global CSS transformations
-2. Global selectors
-3. Global reset
-4. Inherited properties
-5. Page based media queries
+1. Global selectors
+2. Global reset
+3. Inherited properties
+4. Page based media queries
 
-## *Part 2* Solution
+## *Part 3* Components
 
-## Components
+## Isolated Components
 
 <ul>
     <li>
-        <code>components/</code>
+        <code>logo/</code>
         <ul>
-            <li>
-                <code>logo/</code>
-                <ul>
-                    <li><code>logo.js</code></li>
-                    <li><code>logo.css</code></li>
-                    <li><code>logo.svg</code></li>
-                </ul>
-            </li>
-            <li>
-                <code>header/</code>
-                <ul>
-                    <li><code>header.js</code></li>
-                    <li><code>header.css</code></li>
-                </ul>
-            </li>
+            <li><code>logo.js</code></li>
+            <li><code>logo.css</code></li>
+            <li><code>logo.svg</code></li>
+        </ul>
+    </li>
+    <li>
+        <code>header/</code>
+        <ul>
+            <li><code>header.js</code></li>
+            <li><code>header.css</code></li>
         </ul>
     </li>
 </ul>
 
-## *Tranformations* [postcss-use](https://github.com/postcss/postcss-use)
+## [postcss-use](https://github.com/postcss/postcss-use)
 
 ```css
 ***@use*** postcss-center;
@@ -345,7 +341,11 @@ module.***exports*** = React.createClass({
 }
 ```
 
-## *Selectors* [postcss-bem](https://github.com/ileri/postcss-bem)
+## *Part 4* Selectors
+
+## Problem
+
+## [postcss-bem](https://github.com/ileri/postcss-bem)
 !type with-2-sides
 
 ```css
@@ -365,7 +365,7 @@ module.***exports*** = React.createClass({
 ## All machines must suffer
 !type shout
 
-## *Selectors* [CSS Modules](https://github.com/css-modules/css-modules)
+## [CSS Modules](https://github.com/css-modules/css-modules)
 !type with-2-sides
 
 ```css
@@ -380,7 +380,7 @@ module.***exports*** = React.createClass({
 }
 ```
 
-## *Selectors* Client Side: [webpack-modules](#todo)
+## Client Side: [webpack](https://github.com/webpack/css-loader)
 
 ```js
 import ***styles*** from './logo.css';
@@ -392,7 +392,7 @@ class Logo extends React.Component {
 }
 ```
 
-## *Selectors* Server Side: [postcss-modules](https://github.com/outpunk/postcss-modules)
+## Server Side: [postcss-modules](https://github.com/outpunk/postcss-modules)
 
 ```js
 - ***styles*** = JSON.read_file('components/logo/logo.css.json')
@@ -401,7 +401,11 @@ div( class=***styles.logo*** )
   div( class=***styles.name*** )
 ```
 
-## *Reset* [postcss-autoreset](https://github.com/maximkoretskiy/postcss-autoreset)
+## *Part 5* Reset
+
+## Problem
+
+## [postcss-autoreset](https://github.com/maximkoretskiy/postcss-autoreset)
 !type with-2-sides
 
 ```css
@@ -424,7 +428,7 @@ div( class=***styles.logo*** )
 }
 ```
 
-## *Reset* Configuration
+## Configuration
 
 ```js
 autoreset({
@@ -435,7 +439,9 @@ autoreset({
 });
 ```
 
-## *Properties* Inherited Properties
+## *Part 6* Properties
+
+## Inherited Properties
 
 ```html
 <Header>
@@ -446,7 +452,7 @@ autoreset({
 </Header>
 ```
 
-## *Properties* Third-Party Widgets
+## Third-Party Widgets
 
 ```css
 h2 {
@@ -457,7 +463,7 @@ div {
 }
 ```
 
-## *Properties* [postcss-cssnext](#todo)
+## [postcss-cssnext](#todo)
 !type with-2-sides
 
 ```css
@@ -476,6 +482,10 @@ div {
     vertical-align: baseline;
     white-space: normal;
 ```
+
+## *Part 7* Media Queries
+
+## Problem
 
 ## *Media Queries* Components Media Queries
 
