@@ -227,7 +227,7 @@ p {
 
 <style>
 p {
-    padding-top: 20px;
+    padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -241,5 +241,24 @@ img {
         top: -30px;
         max-height: 180px;
     }
+}
+</style>
+
+## Thinking Sass
+
+```css
+.foo {
+    ***@mixin*** transition(width 1s);
+    ***@mixin*** rtl-float(left);
+}
+```
+
+## Use PostCSS to keep code maintainable—not just for syntax sugar
+!type shout
+
+<style>
+h2 {
+    font-size: 290%;
+    line-height: 1.7;
 }
 </style>
