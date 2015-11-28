@@ -6,6 +6,9 @@
 [Andrey Sitnik](http://sitnik.ru/en), [Evil Martians](https://evilmartians.com/)
 
 <style>
+.slide.shout h2 {
+    line-height: 1.6;
+}
 .slide.with-2-sides {
     pre, p, ul, ol {
         float: left;
@@ -263,11 +266,12 @@ img {
 <style>
 h2 {
     font-size: 290%;
-    line-height: 1.7;
 }
 </style>
 
 ## Analog WhatsUp
+
+## All machines must suffer
 
 ## Modern Computer
 
@@ -295,3 +299,184 @@ module.***exports*** = React.createClass({
     font-size: 30px;
 }
 ```
+
+## Problems
+
+1. Global CSS transformations
+2. Global selectors
+3. Global reset
+4. Inherited properties
+5. Page based media queries
+
+## *Part 2* Solution
+
+## Components
+
+<ul>
+    <li>
+        <code>components/</code>
+        <ul>
+            <li>
+                <code>logo/</code>
+                <ul>
+                    <li><code>logo.js</code></li>
+                    <li><code>logo.css</code></li>
+                    <li><code>logo.svg</code></li>
+                </ul>
+            </li>
+            <li>
+                <code>header/</code>
+                <ul>
+                    <li><code>header.js</code></li>
+                    <li><code>header.css</code></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+## *Tranformations* [postcss-use](https://github.com/postcss/postcss-use)
+
+```css
+***@use*** postcss-center;
+
+.logo {
+    top: center;
+}
+```
+
+## *Selectors* [postcss-bem](https://github.com/ileri/postcss-bem)
+!type with-2-sides
+
+```css
+***@b*** Logo {
+    ***@e*** name {
+        color: gray;
+    }
+}
+```
+
+```css
+.***Logo***-name {
+    color: gray
+}
+```
+
+## All machines must suffer
+!type shout
+
+## *Selectors* [CSS Modules](https://github.com/css-modules/css-modules)
+!type with-2-sides
+
+```css
+.name {
+    color: gray;
+}
+```
+
+```css
+.***Logo***__name__***sVK0p*** {
+    color: gray
+}
+```
+
+## *Selectors* Client Side: [webpack-modules](#todo)
+
+```js
+import ***styles*** from './logo.css';
+
+class Logo extends React.Component {
+    render() {
+        return <div className={ ***styles.name*** }></div>;
+    }
+}
+```
+
+## *Selectors* Server Side: [postcss-modules](https://github.com/outpunk/postcss-modules)
+
+```js
+- ***styles*** = JSON.read_file('components/logo/logo.css.json')
+
+div( class=***styles.logo*** )
+  div( class=***styles.name*** )
+```
+
+## *Reset* [postcss-autoreset](https://github.com/maximkoretskiy/postcss-autoreset)
+!type with-2-sides
+
+```css
+.logo {
+}
+.name {  
+}
+.is-big {
+}
+```
+
+```css
+.logo {
+    all: ***initial***;
+}
+.name {
+    all: ***initial***;
+}
+.is-big {
+}
+```
+
+## *Reset* Configuration
+
+```js
+autoreset({
+    reset: {
+        'box-sizing': 'border-box',
+        'all': 'initial'
+    }
+});
+```
+
+## *Properties* Inherited Properties
+
+```html
+<Header>
+    ***color: white***
+    <Logo>
+        ***background: white***
+    </Logo>
+</Header>
+```
+
+## *Properties* Third-Party Widgets
+
+```css
+h2 {
+    color: red;
+}
+div {
+    margin-top: 10px;
+}
+```
+
+## *Properties* [postcss-cssnext](#todo)
+!type with-2-sides
+
+```css
+.logo {
+    all: initial;
+}
+```
+
+```css
+.logo {
+    color: black;
+    background: white;
+    box-sizing: content-box;
+    line-height: normal;
+    text-shadow: none;
+    vertical-align: baseline;
+    white-space: normal;
+```
+
+## *Media Queries* Components Media Queries
+
+## *Media Queries*
