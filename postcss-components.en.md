@@ -55,6 +55,8 @@ p {
 }
 </style>
 
+## *Part 1* What is PostCSS?
+
 ## Inside PostCSS
 
 <div class="postprocessing">
@@ -244,6 +246,8 @@ img {
 }
 </style>
 
+## *Part 2* Problem
+
 ## Thinking Sass
 
 ```css
@@ -262,3 +266,32 @@ h2 {
     line-height: 1.7;
 }
 </style>
+
+## Analog WhatsUp
+
+## Modern Computer
+
+## OSI/ISO
+
+## CommonJS
+
+```js
+var React = ***require***('react');
+
+module.***exports*** = React.createClass({
+    …
+});
+```
+
+## Design Styleguides
+
+## And then Global CSS :(
+
+```css
+* {
+    box-sizing: border-box;
+}
+.title {
+    font-size: 30px;
+}
+```
