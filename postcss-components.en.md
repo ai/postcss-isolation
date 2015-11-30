@@ -533,3 +533,59 @@ div {
 ```html
 <script src="***cq-prolyfill.min.js***" async></script>
 ```
+
+## *Part 8* Summary
+
+## Isolated Component
+
+1. Transformations: `postcss-use`
+2. Selectors: `postcss-modules`
+3. Reset: `postcss-autoreset`
+4. Properties: `all: inital` and `postcss-cssnext`
+5. Media Queries: `cq-prolyfill`
+
+## <a class="github" href="http://github.com/postcss/postcss">github.com/<strong>postcss</strong>/<strong>postcss</strong></a>
+
+* Twitter: [@postcss](https://twitter.com/postcss)
+* Me: [@andreysitnik](https://twitter.com/andreysitnik)
+* Blog: [@evilmartians](https://twitter.com/evilmartians)
+
+!image martians.svg
+
+<style>
+a {
+    background: none;
+}
+h2 a {
+    color: gray;
+    font-family: Open Sans, sans-serif;
+}
+h2 strong {
+    padding: 0 10px;
+    color: black;
+}
+&::after {
+    visibility: hidden;
+}
+ul {
+    position: relative;
+    top: 45px;
+}
+li {
+    font-size: 180%;
+    line-height: 1;
+    padding-bottom: 40px;
+    &::before {
+        visibility: hidden;
+    }
+    &:first-child {
+        margin-top: 90px;
+    }
+}
+img {
+    position: absolute;
+    bottom: 145px;
+    right: 100px;
+    width: 250px;
+}
+</style>
