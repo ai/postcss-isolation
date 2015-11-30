@@ -51,7 +51,7 @@ p {
     font-family: "Open Sans Light";
     font-style: normal;
     position: absolute;
-    bottom: 35px;
+    bottom: 30px;
 }
 &::after {
     visibility: hidden;
@@ -180,7 +180,7 @@ p {
 }
 ```
 
-## **1 300 000** Downloads per Month
+## **1 200 000** Downloads per Month
 
 <div class="stat">
     <div class="line" style="height: 0.67%"></div>
@@ -271,9 +271,7 @@ h2 {
 
 ## All machines must suffer
 
-## Deverse and solve TODO
-
-## Analog WhatsApp
+## Divide and Conquer
 
 ## Modern Computer
 
@@ -344,6 +342,21 @@ module.***exports*** = React.createClass({
 ## *Part 4* Selectors
 
 ## Problem
+!type with-2-sides
+
+```css
+/* logo.css */
+***.name*** {
+    font-size: 20px;
+}
+```
+
+```css
+/* header.css */
+***.name*** {
+    font-size: 16px;
+}
+```
 
 ## [postcss-bem](https://github.com/ileri/postcss-bem)
 !type with-2-sides
@@ -395,15 +408,23 @@ class Logo extends React.Component {
 ## Server Side: [postcss-modules](https://github.com/outpunk/postcss-modules)
 
 ```js
-- ***styles*** = JSON.read_file('components/logo/logo.css.json')
+- ***styles*** = read_json('components/logo/logo.css.json')
 
-div( class=***styles.logo*** )
-  div( class=***styles.name*** )
+div( class=***styles['logo']*** )
+  div( class=***styles['name']*** )
 ```
 
 ## *Part 5* Reset
 
 ## Problem
+
+```css
+*** * *** {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+```
 
 ## [postcss-autoreset](https://github.com/maximkoretskiy/postcss-autoreset)
 !type with-2-sides
@@ -413,7 +434,7 @@ div( class=***styles.logo*** )
 }
 .name {  
 }
-.is-big {
+.name.is-big {
 }
 ```
 
@@ -424,7 +445,7 @@ div( class=***styles.logo*** )
 .name {
     all: ***initial***;
 }
-.is-big {
+.name.is-big {
 }
 ```
 
@@ -487,6 +508,28 @@ div {
 
 ## Problem
 
-## *Media Queries* Components Media Queries
+```css
+/* Page width */
+@media ***(max-width: 600px)*** {
+    .photo {
+        width: auto;
+    }
+}
+```
 
-## *Media Queries*
+## Components Media Queries
+
+```css
+.photo***:container***(width <= 600px) {
+    width: auto;
+}
+.photo***:container***(background-color lightness < 20%) {
+    color: white;
+}
+```
+
+## [cq-prolyfill](https://github.com/ausi/cq-prolyfill)
+
+```html
+<script src="***cq-prolyfill.min.js***" async></script>
+```
