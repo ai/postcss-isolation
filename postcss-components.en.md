@@ -613,6 +613,27 @@ div {
 4. Properties: `all: inital` and `postcss-cssnext`
 5. Media Queries: `cq-prolyfill`
 
+## PostCSS is not an Enemy of Sass
+!type with-2-sides
+
+**Legacy project:**
+
+**New project:**
+
+```js
+.pipe( ***sass***() )
+.pipe( postcss([
+    ...plugins
+]) )
+```
+
+```js
+.pipe( postcss([
+    ***precss***,
+    ...plugins
+]) )
+```
+
 ## <a class="github" href="http://github.com/postcss/postcss">github.com/<strong>postcss</strong>/<strong>postcss</strong></a>
 
 * Twitter: [@postcss](https://twitter.com/postcss)
