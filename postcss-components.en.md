@@ -180,7 +180,7 @@ p {
 }
 ```
 
-## **1 200 000** Downloads per Month
+## **1 300 000** Downloads per Month
 
 <div class="stat">
     <div class="line" style="height: 0.67%"></div>
@@ -204,18 +204,25 @@ p {
     <div class="line" style="height: 89.25%"></div>
     <div class="line" style="height: 100%"></div>
     <div class="line" style="height: 121.14%"></div>
+    <div class="line" style="height: 115.56%"></div>
+    <div class="line" style="height: 140.56%"></div>
 </div>
 
 <style>
 .stat {
     margin-top: 50px;
-    height: 280px;
+    height: 245px;
     position: relative;
+    font-size: 0;
 }
 .line {
     display: inline-block;
     background: #0080e0;
-    width: 32px;
+    width: 30px;
+    margin-left: 4px;
+    &:first-child {
+        margin-left: 0;
+    }
 }
 </style>
 
@@ -273,9 +280,59 @@ h2 {
 
 ## Divide and Conquer
 
-## Modern Computer
-
 ## OSI/ISO
+
+<table>
+<tbody>
+
+<tr style="background:#d8ec9b;">
+<td>7.&nbsp;Application</td>
+<td>HTTP, FTP, SMTP, SSH, TELNET</td>
+</tr>
+
+<tr style="background:#d8ec9b;">
+<td>6.&nbsp;Presentation</td>
+<td>HTML, CSS, GIF</td>
+</tr>
+
+<tr style="background:#d8ec9b;">
+<td>5. Session</td>
+<td>RPC, PAP, SSL, SQL</td>
+</tr>
+
+<tr style="background:#e7ed9c;">
+<td>4. Transport</td>
+<td>TCP, UDP, NETBEUI</td>
+</tr>
+
+<tr style="background:#eddc9c;">
+<td>3. Network</td>
+<td>IPv4, IPv6, IPsec, AppleTalk, ICMP</td>
+</tr>
+
+<tr style="background:#e9c189;">
+<td>2. Data link</td>
+<td>PPP, IEEE 802.2, L2TP, MAC, LLDP</td>
+</tr>
+
+<tr style="background:#e9988a;">
+<td>1. Physical</td>
+<td>Ethernet physical layer, DSL, USB, ISDN, DOCSIS</td>
+</tr>
+
+</tbody></table>
+
+<style>
+table td {
+    background: none;
+    border: 2px solid white;
+    border-width: 2px 0;
+    padding: 0 15px;
+    &:first-child {
+        font-weight: bold;
+    }
+}
+</style>
 
 ## CommonJS
 
@@ -288,6 +345,18 @@ module.***exports*** = React.createClass({
 ```
 
 ## Design Styleguides
+
+!image material.jpg
+
+<style>
+img {
+    position: relative;
+    top: -20px;
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+</style>
 
 ## And then Global CSS **:-(**
 
