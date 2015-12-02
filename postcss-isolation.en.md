@@ -299,16 +299,14 @@ h2 {
 }
 </style>
 
-## Why we have created computers?
+## Why did we create computers?
 !cover war.jpg
 !type  with-shadow
 
 <style>
 h2 {
     position: absolute;
-    line-height: 1.4;
-    bottom: 50px;
-    width: 500px;
+    bottom: 60px;
 }
 </style>
 
@@ -387,7 +385,7 @@ table td {
 }
 </style>
 
-## Operation System
+## Operating System
 
 !image systemd.svg
 
@@ -469,6 +467,13 @@ img {
 ## *Part 4* Selectors
 !cover light.jpg
 !type  is-yellow
+
+<style>
+h2 {
+    position: absolute;
+    bottom: 60px;
+}
+</style>
 
 ## Problem
 !type with-2-sides
@@ -617,7 +622,7 @@ div {
 }
 ```
 
-## [postcss-cssnext](#todo)
+## [postcss-cssnext](https://github.com/cssnext/postcss-cssnext)
 !type with-2-sides
 
 ```css
@@ -743,8 +748,8 @@ li {
 }
 img {
     position: absolute;
-    bottom: 115px;
+    bottom: 105px;
     right: 100px;
-    width: 300px;
+    width: 320px;
 }
 </style>
