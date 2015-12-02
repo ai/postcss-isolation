@@ -1,5 +1,5 @@
-### Keynotes about components web development with PostCSS
+### Fix Global CSS with PostCSS
 
-* English: [ai.github.io/postcss-components/](http://ai.github.io/postcss-components/)
+View: [ai.github.io/postcss-isolation/](http://ai.github.io/postcss-isolation/)
 
 For my talk on [dotCSS](http://www.dotcss.io/).
