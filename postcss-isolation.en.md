@@ -299,14 +299,16 @@ h2 {
 }
 </style>
 
-## Why we have computers?
+## Why we have created computers?
 !cover war.jpg
 !type  with-shadow
 
 <style>
 h2 {
     position: absolute;
-    bottom: 60px;
+    line-height: 1.4;
+    bottom: 50px;
+    width: 500px;
 }
 </style>
 
@@ -399,7 +401,7 @@ module.***exports*** = React.createClass({
 });
 ```
 
-## Design Styleguides
+## Design Style Guides
 
 !image material.jpg
 
@@ -705,6 +707,7 @@ div {
 * Twitter: [@postcss](https://twitter.com/postcss)
 * Me: [@andreysitnik](https://twitter.com/andreysitnik)
 * Blog: [@evilmartians](https://twitter.com/evilmartians)
+* Evil Martians: [evl.ms](https://evilmartians.com/)
 
 !image martians.svg
 
@@ -725,7 +728,7 @@ h2 strong {
 }
 ul {
     position: relative;
-    top: 45px;
+    top: 10px;
 }
 li {
     font-size: 180%;
@@ -740,8 +743,8 @@ li {
 }
 img {
     position: absolute;
-    bottom: 145px;
+    bottom: 115px;
     right: 100px;
-    width: 250px;
+    width: 300px;
 }
 </style>
