@@ -6,6 +6,19 @@
 [Andrey Sitnik](http://sitnik.ru/en), [Evil Martians](https://evilmartians.com/)
 
 <style>
+.slide.cover h2 {
+    color: white;
+    font-family: "Open Sans";
+}
+.slide.with-shadow h2 {
+    text-shadow: 1px  1px 1px black, -1px  1px 1px black,
+                 1px -1px 1px black, -1px -1px 1px black;
+}
+.slide.is-yellow h2 {
+    color: black;
+    text-shadow: 1px  1px 1px #f6ef85, -1px  1px 1px #f6ef85,
+                 1px -1px 1px #f6ef85, -1px -1px 1px #f6ef85;
+}
 .slide.shout h2 {
     line-height: 1.6;
 }
@@ -59,6 +72,14 @@ p {
 </style>
 
 ## *Part 1* What is PostCSS?
+!cover what.jpg
+
+<style>
+h2 {
+    position: absolute;
+    bottom: 60px;
+}
+</style>
 
 ## Inside PostCSS
 
@@ -257,6 +278,8 @@ img {
 </style>
 
 ## *Part 2* Problem
+!cover problem.jpg
+!type  with-shadow
 
 ## Thinking Sass
 
@@ -276,9 +299,37 @@ h2 {
 }
 </style>
 
-## All machines must suffer
+## Why we have computers?
+!cover war.jpg
+!type  with-shadow
 
-## Divide and Conquer
+<style>
+h2 {
+    position: absolute;
+    bottom: 60px;
+}
+</style>
+
+## 1. All machines must suffer
+!cover suffer.jpg
+!type  with-shadow
+
+<style>
+h2 {
+    text-align: right;
+    padding-left: 400px;
+    line-height: 1.4;
+}
+</style>
+
+## 2. Divide and Conquer
+!cover parts.jpg
+
+<style>
+h2 {
+    color: black;
+}
+</style>
 
 ## OSI/ISO
 
@@ -334,6 +385,10 @@ table td {
 }
 </style>
 
+## Operation System
+
+!image systemd.svg
+
 ## CommonJS
 
 ```js
@@ -377,6 +432,7 @@ img {
 4. Page based media queries
 
 ## *Part 3* Components
+!cover solution.jpg
 
 ## Isolated Components
 
@@ -409,6 +465,8 @@ img {
 ```
 
 ## *Part 4* Selectors
+!cover light.jpg
+!type  is-yellow
 
 ## Problem
 !type with-2-sides
@@ -484,6 +542,8 @@ div( class=***styles['logo']*** )
 ```
 
 ## *Part 5* Reset
+!cover broke.jpg
+!type  is-yellow
 
 ## Problem
 
@@ -530,6 +590,8 @@ autoreset({
 ```
 
 ## *Part 6* Properties
+!cover carry.jpg
+!type  with-shadow
 
 ## Inherited Properties
 
@@ -574,6 +636,8 @@ div {
 ```
 
 ## *Part 7* Media Queries
+!cover alien.jpg
+!type  with-shadow
 
 ## Problem
 
@@ -604,6 +668,8 @@ div {
 ```
 
 ## *Part 8* Summary
+!cover walking.jpg
+!type  with-shadow
 
 ## Isolated Component
 
