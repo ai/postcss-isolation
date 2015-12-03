@@ -678,7 +678,7 @@ div {
 !cover walking.jpg
 !type  with-shadow
 
-## Isolated Component
+## 100% Isolation with PostCSS
 
 1. Transformations: `postcss-use`
 2. Selectors: `postcss-modules`
