@@ -310,7 +310,7 @@ h2 {
 }
 </style>
 
-## 1. All machines must suffer
+## 1. All machines **must suffer**
 !cover suffer.jpg
 !type  with-shadow
 
@@ -657,7 +657,7 @@ div {
 }
 ```
 
-## Components Media Queries
+## Component Media Queries
 
 ```css
 .photo***:container***(width <= 600px) {
@@ -678,7 +678,7 @@ div {
 !cover walking.jpg
 !type  with-shadow
 
-## 100% Isolation with PostCSS
+## Absolute Isolation with PostCSS
 
 1. Transformations: `postcss-use`
 2. Selectors: `postcss-modules`
