@@ -622,7 +622,7 @@ div {
 }
 ```
 
-## [postcss-cssnext](https://github.com/cssnext/postcss-cssnext)
+## [postcss-cssnext](https://github.com/MoOx/postcss-cssnext)
 !type with-2-sides
 
 ```css
